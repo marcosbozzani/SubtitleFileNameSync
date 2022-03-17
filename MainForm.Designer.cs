@@ -36,6 +36,7 @@ namespace SubtitleFileNameSync
             this.btnSubtitlesFolder = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.lblBuild = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +102,7 @@ namespace SubtitleFileNameSync
             this.btnVideosFolder.Name = "btnVideosFolder";
             this.btnVideosFolder.Size = new System.Drawing.Size(158, 31);
             this.btnVideosFolder.TabIndex = 3;
-            this.btnVideosFolder.Text = "Videos Folder";
+            this.btnVideosFolder.Text = "Videos Folder ...";
             this.btnVideosFolder.UseVisualStyleBackColor = true;
             this.btnVideosFolder.Click += new System.EventHandler(this.btnMoviesFolder_Click);
             // 
@@ -114,7 +115,7 @@ namespace SubtitleFileNameSync
             this.btnSubtitlesFolder.Name = "btnSubtitlesFolder";
             this.btnSubtitlesFolder.Size = new System.Drawing.Size(168, 31);
             this.btnSubtitlesFolder.TabIndex = 4;
-            this.btnSubtitlesFolder.Text = "Subtitles Folder";
+            this.btnSubtitlesFolder.Text = "Subtitles Folder ...";
             this.btnSubtitlesFolder.UseVisualStyleBackColor = true;
             this.btnSubtitlesFolder.Click += new System.EventHandler(this.btnOriginalSubtitlesFolder_Click);
             // 
@@ -144,11 +145,23 @@ namespace SubtitleFileNameSync
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // lblBuild
+            // 
+            this.lblBuild.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblBuild.AutoSize = true;
+            this.lblBuild.Location = new System.Drawing.Point(12, 484);
+            this.lblBuild.Name = "lblBuild";
+            this.lblBuild.Size = new System.Drawing.Size(29, 13);
+            this.lblBuild.TabIndex = 7;
+            this.lblBuild.Text = "build";
+            this.lblBuild.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 516);
+            this.Controls.Add(this.lblBuild);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -171,6 +184,7 @@ namespace SubtitleFileNameSync
         private System.Windows.Forms.Button btnSubtitlesFolder;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label lblBuild;
     }
 }
 
